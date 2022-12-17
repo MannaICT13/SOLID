@@ -35,4 +35,35 @@ class Handler {
     }
 }
 
+//****************************************** SRP Example ***********************************
+class Handler_SRP {
+    let networkHandler: NetworkHandler
+    let pareseHandler: ParseHandler
+    let dbHandler: DatabaseHandler
+    
+    init(networkHandler: NetworkHandler, pareseHandler: ParseHandler, dbHandler: DatabaseHandler) {
+        self.networkHandler = networkHandler
+        self.pareseHandler = pareseHandler
+        self.dbHandler = dbHandler
+    }
+}
 
+class NetworkHandler {
+    private func requestDataToAPI() -> Data {
+        // Network Request code here
+        return Data()
+    }
+}
+
+class ParseHandler {
+    private func parseResponse(data: Data) -> [String] {
+        // Network  response code here
+        return []
+    }
+}
+
+class DatabaseHandler {
+    private func saveToDB(array: [String]) {
+        // Save data code here
+    }
+}
