@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+/*
+ Open Closed Principle:
+ Open for extension But Closed for modification.
+ */
