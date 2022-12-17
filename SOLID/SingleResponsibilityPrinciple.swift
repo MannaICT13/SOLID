@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+/*
+ Single Responsibility Priciple:
+ Every module should have only one responsibility and reason to change.
+ */
