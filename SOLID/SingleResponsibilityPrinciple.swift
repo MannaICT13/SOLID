@@ -11,3 +11,22 @@ import Foundation
  Single Responsibility Priciple:
  Every module should have only one responsibility and reason to change.
  */
+
+/// Breaking of SRP Example:
+class Handler {
+    private func requestDataToAPI() -> Data {
+        // Network Request code here
+        return Data()
+    }
+    
+    private func parseResponse(data: Data) -> [String] {
+        // Network  response code here
+        return []
+    }
+    
+    private func saveToDB(array: [String]) {
+        // Save data code here
+    }
+}
+
+
