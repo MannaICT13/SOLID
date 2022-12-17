@@ -14,6 +14,12 @@ import Foundation
 
 /// Breaking of SRP Example:
 class Handler {
+    private func handle() {
+        let data = requestDataToAPI()
+        let array = parseResponse(data: data)
+        saveToDB(array: array)
+    }
+    
     private func requestDataToAPI() -> Data {
         // Network Request code here
         return Data()
