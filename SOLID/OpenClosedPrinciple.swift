@@ -38,3 +38,31 @@ class _PaymentManager {
         
     }
 }
+
+//****************************************** OCP Example ***********************************
+protocol Paymentable {
+    func makePayment(amount: Double)
+}
+
+class PaymentManager_OCP {
+    func makePayment(amount: Double, payment: Paymentable) {
+        payment.makePayment(amount: amount)
+    }
+}
+
+class CashPayment: Paymentable {
+    func makePayment(amount: Double) {
+    }
+}
+
+class VisaPayment: Paymentable {
+    func makePayment(amount: Double) {
+        
+    }
+}
+
+class MasterPayment: Paymentable {
+    func makePayment(amount: Double) {
+        
+    }
+}
