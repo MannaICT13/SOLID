@@ -38,3 +38,30 @@ class Robot: Worker {
         //Robot can't eat
     }
 }
+
+
+//****************************************** ISP Example ***********************************
+
+protocol Workable {
+    func work()
+}
+
+protocol Eatable {
+    func eat()
+}
+
+class _Human: Workable, Eatable {
+    func work() {
+        print("Working")
+    }
+    
+    func eat() {
+        print("Eating")
+    }
+}
+
+class _Robot: Workable {
+    func work() {
+        print("Working")
+    }
+}
