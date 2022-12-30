@@ -15,6 +15,7 @@
 		2A50CEDC294B8013002DC9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A50CEDA294B8013002DC9D3 /* LaunchScreen.storyboard */; };
 		2A9951CA295EB3DB007C2E7E /* LiskovSubstitutionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9951C9295EB3DB007C2E7E /* LiskovSubstitutionPrinciple.swift */; };
 		2A9951CC295EBF79007C2E7E /* InterfaceSegregationprinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9951CB295EBF79007C2E7E /* InterfaceSegregationprinciple.swift */; };
+		2A9951CE295EC3CE007C2E7E /* DependencyInversionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9951CD295EC3CE007C2E7E /* DependencyInversionPrinciple.swift */; };
 		2AE7F545294E11A900D48DE5 /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7F544294E11A900D48DE5 /* SingleResponsibilityPrinciple.swift */; };
 		2AE7F547294E1B1100D48DE5 /* OpenClosedPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE7F546294E1B1100D48DE5 /* OpenClosedPrinciple.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		2A50CEDD294B8013002DC9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A9951C9295EB3DB007C2E7E /* LiskovSubstitutionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskovSubstitutionPrinciple.swift; sourceTree = "<group>"; };
 		2A9951CB295EBF79007C2E7E /* InterfaceSegregationprinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceSegregationprinciple.swift; sourceTree = "<group>"; };
+		2A9951CD295EC3CE007C2E7E /* DependencyInversionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInversionPrinciple.swift; sourceTree = "<group>"; };
 		2AE7F544294E11A900D48DE5 /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
 		2AE7F546294E1B1100D48DE5 /* OpenClosedPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClosedPrinciple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				2AE7F546294E1B1100D48DE5 /* OpenClosedPrinciple.swift */,
 				2A9951C9295EB3DB007C2E7E /* LiskovSubstitutionPrinciple.swift */,
 				2A9951CB295EBF79007C2E7E /* InterfaceSegregationprinciple.swift */,
+				2A9951CD295EC3CE007C2E7E /* DependencyInversionPrinciple.swift */,
 			);
 			path = SOLID;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				2A50CED4294B800F002DC9D3 /* ViewController.swift in Sources */,
 				2A9951CA295EB3DB007C2E7E /* LiskovSubstitutionPrinciple.swift in Sources */,
 				2A50CED0294B800F002DC9D3 /* AppDelegate.swift in Sources */,
+				2A9951CE295EC3CE007C2E7E /* DependencyInversionPrinciple.swift in Sources */,
 				2A9951CC295EBF79007C2E7E /* InterfaceSegregationprinciple.swift in Sources */,
 				2AE7F547294E1B1100D48DE5 /* OpenClosedPrinciple.swift in Sources */,
 				2AE7F545294E11A900D48DE5 /* SingleResponsibilityPrinciple.swift in Sources */,
