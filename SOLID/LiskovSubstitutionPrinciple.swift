@@ -46,3 +46,46 @@ let rectangle = Rectangle()
 let square = Square()
 //printArea(of: square) 4
 
+//****************************************** LSP Example ***********************************
+
+protocol Polygon {
+    var area: Double { get }
+}
+
+class _Rectangle: Polygon {
+    private let length: Double
+    private let width: Double
+    
+    init(length: Double, width: Double) {
+        self.length = length
+        self.width = width
+    }
+    
+    var area: Double {
+        return length * width
+    }
+}
+
+class _Square: Polygon {
+    private let length: Double
+    
+    init(length: Double) {
+        self.length = length
+    }
+    
+    var area: Double {
+        return length * length
+    }
+}
+
+func printArea(of polygon: Polygon) {
+    print(polygon.area)
+}
+
+let _rectangle = _Rectangle(length: 2, width: 5)
+//printArea(of: rectangle) 10
+
+let _square = _Square(length: 2)
+//printArea(of: square) 4
+
+//*****
