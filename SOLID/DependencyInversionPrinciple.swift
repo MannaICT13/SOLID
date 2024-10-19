@@ -8,7 +8,7 @@
 import Foundation
 
 /*
- Dependenccy Inversion Principle:
+ Dependency Inversion Principle:
  High-level modules should not depend on low-level modules both should depend on Abstractions.
  */
 
@@ -65,5 +65,74 @@ class _Handler {
     
     func handle(string: String) {
         storage.save(string: string)
+    }
+}
+
+/************** Another Example ***************/
+
+// BAD Example 
+// Low-level class: Dog
+class Dog {
+    func bark() {
+        print("Woof!")
+    }
+}
+
+// Low-level class: Cat
+class Cat {
+    func meow() {
+        print("Meow!")
+    }
+}
+
+// High-level class: AnimalSoundMaker
+class AnimalSoundMaker {
+    let dog: Dog
+    let cat: Cat
+    
+    init(dog: Dog, cat: Cat) {
+        self.dog = dog
+        self.cat = cat
+    }
+    
+    func makeDogSound() {
+        dog.bark()
+    }
+    
+    func makeCatSound() {
+        cat.meow()
+    }
+}
+
+/***************************Good Example*********************/
+// Abstraction: Animal
+protocol Animal {
+    func makeSound()
+}
+
+// Low-level class: Dog
+class Dog: Animal {
+    func makeSound() {
+        print("Woof!")
+    }
+}
+
+// Low-level class: Cat
+class Cat: Animal {
+    func makeSound() {
+        print("Meow!")
+    }
+}
+
+// High-level class: AnimalSoundMaker
+class AnimalSoundMaker {
+    let animal: Animal
+    
+    init(animal: Animal) {
+        self.animal = animal
+    }
+    
+    func performSound() {
+        animal.makeSound()
     }
 }
